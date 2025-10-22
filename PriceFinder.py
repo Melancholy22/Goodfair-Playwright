@@ -69,7 +69,7 @@ def run(playwright):
     page.set_default_timeout(10000)
     page.goto(WEBSITE_URL, wait_until="domcontentloaded")
 
-    #login(page)
+    login(page)
     search(page)
 
     page.wait_for_timeout(10000)
