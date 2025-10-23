@@ -27,7 +27,7 @@ def login(page):
     password_input.fill(PASSWORD)
 
     print("Please solve the Captcha and then click Submit")
-    page.wait_for_timeout(100 * 1000) # Give the user 100 seconds to fill out captcha and submit 
+    page.wait_for_timeout(20 * 1000) # Give the user 20 seconds to fill out captcha and submit 
 
 def search(page):
     search_btn = page.locator("header").get_by_role(
@@ -69,7 +69,7 @@ def run(playwright):
     page.set_default_timeout(10000)
     page.goto(WEBSITE_URL, wait_until="domcontentloaded")
 
-    #login(page)
+    login(page)
     search(page)
 
     page.wait_for_timeout(10000)
