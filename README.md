@@ -5,7 +5,7 @@
 A small playwright script targeted specifically at goodfair.com (Shopify Website) to:
 
 - Open login page, pre-fill credentials, and pause so user can solve hCaptcha and click submit manually
-    * Note that there is some user input due my inability to find a workaround for captcha
+    ** Note that there seems to be some problems with playwright and shopify's captcha so we cannot submit login without running into those problems.**
 - Run a search to find a specific targeted item and extract its price
 
 ## Table of Contents (Optional)
@@ -14,8 +14,6 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
